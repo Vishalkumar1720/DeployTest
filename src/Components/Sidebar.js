@@ -1,96 +1,30 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { GrHomeRounded } from "react-icons/gr";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { RiBillLine } from "react-icons/ri";
 import { IoMdAnalytics } from "react-icons/io";
 import { FaVideo } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
-const sidebarItems = [
-  {
-    to: "/HomePage",
-    icon: (
-      <div className="hover:bg-gray-300 p-1 border-2 border-blue-200 rounded-md cursor-pointer">
-      <GrHomeRounded
-        color="white"
-        title="Home"
-        style={{ width: "22px", height: "100%", color: "#000000", ":hover": {Color: "#ffffff" } }}
-      />
-     </div>
-    ),
-  },
-  {
-    to: "/invManagement",
-    icon: (
-      <div className="hover:bg-gray-300 p-1 border-2 border-blue-200 rounded-md cursor-pointer">
-      <MdOutlineInventory2
-        color="white"
-        title="Inventory Management"
-        style={{ width: "22px", height: "100%", color: "#000000" }}
-      />
-       </div>
-    ),
-  },
-  {
-    to: "/Billing",
-    icon: (
-      <div className="hover:bg-gray-300 border-2 border-blue-200 p-1 rounded-md cursor-pointer">
-      <RiBillLine
-        color="white"
-        title="Billing"
-        style={{ width: "22px", height: "100%", color: "#000000" }}
-      />
- </div>
-    ),
-  },
-  {
-    to: "/Analysis",
-    icon: (
-      <div className="hover:bg-gray-300 border-2 border-blue-200 p-1 rounded-md cursor-pointer">
-      <IoMdAnalytics
-        color="white"
-        title="Analyzing"
-        style={{ width: "22px", height: "100%", color: "#000000" }}
-      />
- </div>
-    ),
-  },
-  {
-    to: "/Video",
-    icon: (
-      <div className="hover:bg-gray-300 p-1 border-2 border-blue-200 rounded-md cursor-pointer">
-      <FaVideo
-        color="white"
-        title="Video"
-        style={{ width: "22px", height: "100%", color: "#000000" }}
-      /> </div>
-    ),
-  },
+const SidebarItems = [
+  { to: "/HomePage", icon: <GrHomeRounded size={22} className="text-black" /> },
+  { to: "/invManagement", icon: <MdOutlineInventory2 size={22} className="text-black" /> },
+  { to: "/Billing", icon: <RiBillLine size={22} className="text-black" /> },
+  { to: "/Analysis", icon: <IoMdAnalytics size={22} className="text-black" /> },
+  { to: "/Video", icon: <FaVideo size={22} className="text-black" /> },
 ];
 
-const SidebarItem = ({ to, icon, onClick }) => (
-  <li className="p-4" onClick={onClick}>
-    <Link to={to} className="icon-link">
-      {icon}
-    </Link>
-  </li>
-);
-
 const Sidebar = () => {
+  const location = useLocation();
   return (
     <div className="bg-white h-screen flex justify-center items-center w-11">
-    
       <ul>
-        {sidebarItems.map((item, index) => (
-         <SidebarItem
-         key={index}
-         to={item.to}
-         icon={item.icon}
-         
-       />
+        {SidebarItems.map((item, index) => (
+          <li key={index} className={`p-4 ${location.pathname === item.to ? 'bg-gray-200' : ''}`}>
+            <Link to={item.to} > {item.icon} </Link>
+          </li>
         ))}
       </ul>
-    
     </div>
   );
 };
