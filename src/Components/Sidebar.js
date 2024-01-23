@@ -21,7 +21,7 @@ const Sidebar = () => {
       <ul>
         {SidebarItems.map((item, index) => (
           <li key={index} className={`p-4 ${location.pathname === item.to ? 'bg-gray-200' : ''}`}>
-            <Link to={item.to} > {item.icon} </Link>
+            <Link to={item.to} > {item.icon}  </Link>
           </li>
         ))}
       </ul>

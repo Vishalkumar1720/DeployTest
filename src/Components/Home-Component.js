@@ -33,7 +33,7 @@ const HomeComponent = () => (
         </div>
       </div>
       <div className="flex flex-col lg:flex-row justify-between space-x-4">
-      <div className="flex flex-col lg:flex-row items-center bg-white border-b-4 py-3 px-5 justify-center gap-3 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.4)] hover:border-[#7000FF] w-full lg:w-[45%]">
+      <div className="flex flex-col lg:flex-row items-center bg-white border-b-4 py-3 px-5 justify-center gap-3 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.4)] hover:border-[#7000FF] w-full h-44 lg:w-[45%]">
         <FaCartArrowDown color="#7000FF" size="40" />
         <div className="flex flex-col justify-center">
           <p className="text-[18px]">Today Sale</p>
