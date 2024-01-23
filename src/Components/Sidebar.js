@@ -17,7 +17,7 @@ const SidebarItems = [
 const Sidebar = () => {
   const location = useLocation();
   return (
-    <div className="bg-white h-screen flex justify-center items-center w-11">
+    <div className="bg-white h-screen flex justify-center items-center w-10">
       <ul>
         {SidebarItems.map((item, index) => (
           <li key={index} className={`p-4 ${location.pathname === item.to ? 'bg-gray-200' : ''}`}>
