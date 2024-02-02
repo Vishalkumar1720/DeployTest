@@ -17,11 +17,11 @@ const SidebarItems = [
 const Sidebar = () => {
   const location = useLocation();
   return (
-    <div className="bg-white h-screen flex justify-center items-center w-10">
+    <div className="bg-white h-screen flex justify-center items-center w-11">
       <ul>
         {SidebarItems.map((item, index) => (
-          <li key={index} className={`p-4 ${location.pathname === item.to ? 'bg-gray-200' : ''}`}>
-            <Link to={item.to} > {item.icon}  </Link>
+          <li key={index} className={`p-4 ${location.pathname === item.to ? 'border-b-4 border-lime-500' : 'border-b-4 border-transparent'}`}>
+            <Link to={item.to} > {item.icon} </Link>
           </li>
         ))}
       </ul>

@@ -60,9 +60,12 @@ const HomeComponent = () => (
       <div className="flex flex-col lg:flex-row items-center bg-white border-b-4 hover:border-[#EB002A] py-3 px-5 justify-start gap-3 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.5)] lg:w-[45%]">
         <MdDeleteSweep color="#EB002A" size="44" />
         <div className="flex flex-col justify-center">
+        <Link to="/RemoveExpiry">
           <p className="text-[26px]">Today Expiry</p>
           <h4 className="text-black font-bold text-[26px]">5643</h4>
+       
           <p className="text-[#EB002A]  font-[500]">Remove expires</p>
+          </Link>
         </div>
       </div>
 

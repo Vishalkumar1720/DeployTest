@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import SignUp from "./Pages/SignUp";
+// import SignUp from "./Pages/SignUp";
 import Login from "./Pages/Login";
+import SignUp from "./Pages/SignUp/SignUp";
 import Home from "./Components/Home";
 import HomePage from "./Pages/All-Home-Pages/HomePage";
 import InvManagement from "./Pages/All-InvManagement-Pages/InvManagement";
@@ -14,6 +15,7 @@ import Video from "./Pages/All-Video-Pages/Video";
 import AddStock from "./Pages/All-Home-Pages/AddStock";
 import Pos from "./Pages/All-Home-Pages/Pos";
 import Po from "./Pages/All-Home-Pages/Purchase-order";
+import RemoveExp from "./Pages/All-Home-Pages/RemoveExp";
 
 const routes = [
   { path: "/", element: <Home /> },
@@ -27,6 +29,7 @@ const routes = [
   { path: "/pointOfSale", element: <Pos /> },
   { path: "/inventaryHealth", element: <AddStock /> },
   { path: "/PurchaseOrder", element: <Po /> },
+  { path: "/RemoveExpiry", element: <RemoveExp /> },
 ];
 
 function App() {

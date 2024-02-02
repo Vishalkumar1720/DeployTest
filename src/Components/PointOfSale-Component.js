@@ -10,7 +10,7 @@ const PointOfSale = () => {
   return (
     <div className="flex flex-col justify-start gap-6 py-3 px-6 w-full h-screen ">
       <div className="flex justify-between items-center">
-        <h2 className="text-[24px] font-[600] font-serif"> Point Of Sale</h2>
+        <h1 className="text-[24px] font-[600] font-serif"> Point Of Sale</h1>
         <div>
           <button type="button" className="flex items-center focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-3.5 py-1 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700">
             <Link to="/HomePage" className="flex items-center text-white">
@@ -21,32 +21,35 @@ const PointOfSale = () => {
       </div>
 
       <div className="flex flex-col gap-2 bg-white p-2 rounded-md">
-        <h2>Patient Details</h2>
+      <h2>Patient Details</h2>
         <div className="flex flex-row justify-between items-center">
           <div>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded border-black w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="Customer Name"
             ></input>
           </div>
+
           <div>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              type="number"
-              placeholder="Mobile Number"
-            ></input>
-          </div>
-          <div>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded border-black w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="number"
               placeholder="Age"
             ></input>
           </div>
+
           <div>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded border-black w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="number"
+              placeholder="Mobile Number"
+            ></input>
+          </div>
+
+          <div>
+            <input
+              className="shadow appearance-none border rounded border-black w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="date"
               placeholder="Date"
             ></input>

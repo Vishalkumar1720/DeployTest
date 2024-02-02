@@ -52,10 +52,10 @@ const InventaryHealth = () => {
       <div className="flex bg-zinc-300">
         <div className="flex flex-col justify-start gap-8 py-3 px-6 w-full h-screen ">
           <div className="flex justify-between items-center">
-            <h2 className="text-[24px] font-[600] font-serif">
+            <h1 className="text-[24px] font-[600] font-serif">
               {" "}
               Inventary Heatlth
-            </h2>
+            </h1>
             <button type="button" className="flex items-center focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium text-sm px-3.5 py-1 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700">
             <Link to="/HomePage" className="flex items-center text-white">
               Return Home <IoReturnDownBack className="ml-2" />
