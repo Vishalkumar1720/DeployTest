@@ -19,7 +19,7 @@ import RemoveExp from "./Pages/All-Home-Pages/RemoveExp";
 
 const routes = [
   { path: "/", element: <Home /> },
-  { path: "/signup", element: <SignUp /> },
+  { path: "/signup", element: <SignUp/> },
   { path: "/login", element: <Login /> },
   { path: "/homePage", element: <HomePage /> },
   { path: "/invManagement", element: <InvManagement /> },

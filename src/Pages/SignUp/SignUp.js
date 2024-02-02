@@ -1,11 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Stepper, Step, Typography } from "@material-tailwind/react";
-import {
-  CogIcon,
-  UserIcon,
-  BuildingLibraryIcon,
-} from "@heroicons/react/24/outline";
+
 
 import "react-toastify/dist/ReactToastify.css";
 
